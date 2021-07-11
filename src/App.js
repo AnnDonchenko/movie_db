@@ -4,14 +4,11 @@ import Header from "./components/header/Header";
 import Routes from "./routes/Routes";
 
 function App() {
-  return (
-    <div className="App">
-        <Router>
-            <Header/>
-            <Routes/>
-        </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            Master
+        </div>
+    );
 }
 
 export default App;

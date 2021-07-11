@@ -1,9 +1,0 @@
-.movies-list{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    padding-top: 50px;
-}
-.movies-list > .movies-list-card{
-    margin-bottom: 20px;
-}
