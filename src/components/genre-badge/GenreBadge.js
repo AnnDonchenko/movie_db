@@ -1,18 +1,8 @@
-import {useEffect, useState} from "react";
-import {getMovieGenre} from "../../services/MoviesAPI";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 
-export default function GenreBadge ({id}){
-    const [mainGenre, setMainGenre] = useState([]);
-    console.log(id);
-    useEffect(()=>{
-        getMovieGenre().then(value => {
-            let x = [...value.data.genres].filter(genre => genre.id === id[0]);
-            setMainGenre(x[0].name);
-        })
-    },[])
+export default function GenreBadge({mainGenreName}) {
     return (
-        <div>
-            <p>{mainGenre}</p>
-        </div>
+        <p className={'genre'}><FontAwesomeIcon icon={faMapMarkerAlt} /> <span>{mainGenreName}</span></p>
     );
 }
