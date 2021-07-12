@@ -8,3 +8,9 @@
 .movies-list > .movies-list-card{
     margin-bottom: 20px;
 }
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}

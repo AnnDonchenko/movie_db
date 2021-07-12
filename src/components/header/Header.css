@@ -15,7 +15,6 @@ nav{
 }
 nav .nav-list{
     position: absolute;
-    width: 130px;
     display: flex;
     flex-direction: column;
     background: rgb(255,255,255);
@@ -24,10 +23,11 @@ nav .nav-list{
     border-radius: 0 5px 5px 5px;
 }
 nav .nav-list > a{
-    padding: 5px 10px;
+    padding: 20px 40px;
     text-decoration: none;
     color: #717171;
-    font-size: 18px;
+    font-size: 25px;
+    white-space: nowrap;
 }
 nav .nav-list > a:hover{
     background: linear-gradient(rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);

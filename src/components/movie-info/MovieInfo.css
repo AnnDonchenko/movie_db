@@ -1,13 +1,15 @@
-.movie-info{
+.movie-info {
     color: #b4b4b4;
 }
-.movie-info .title{
+
+.movie-info .title {
     color: #717171;
     font-size: 18px;
     font-weight: normal;
     padding: 20px;
 }
-.movie-info .description{
+
+.movie-info .description {
     padding: 0 20px;
     margin: 20px 0;
     display: -webkit-box;
@@ -17,6 +19,21 @@
     text-overflow: ellipsis;
     height: 66px;
 }
-.movie-info .genre{
+
+.movie-info .genre {
     padding: 0 20px;
+}
+
+.movie-info .rating {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #e9e9e9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-info .rating > .fb{
+    font-size: 1.5rem;
+    margin-right: 10px;
 }

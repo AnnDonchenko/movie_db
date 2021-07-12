@@ -1,8 +1,10 @@
+import './Home.css';
+
 export default function Home (){
     return (
-        <div>
-            Welcome.
-            Millions of movies, TV shows and people to discover. Explore now.
+        <div className={'container home'}>
+            <h1>Welcome.
+                Millions of movies, TV shows and people to discover. Explore now.</h1>
         </div>
     );
 }

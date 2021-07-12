@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import './Header.css';
-import UserInfo from "../user-info/UserInfo";
+import UserInfo from "./user-info/UserInfo";
 import logo from './logo.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faSearch} from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,7 @@ export default function Header() {
                     <button id={'nav-btn'} onClick={()=>navToggle()}><FontAwesomeIcon icon={faBars} /></button>
                     <div className={'nav-list ' + navClass}>
                         <Link to={'/movies'} onClick={()=>navToggle()}>movies list</Link>
-                        <Link to={'/genres'} onClick={()=>navToggle()}>genres list</Link>
+                        <Link to={'/tv'} onClick={()=>navToggle()}>genres list</Link>
                     </div>
                 </nav>
                 <div className="search">

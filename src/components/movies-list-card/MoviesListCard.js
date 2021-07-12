@@ -11,8 +11,8 @@ export default function MoviesListCard ({movie, genres}){
         <div className={'movies-list-card'}>
             <PosterPreview link={movie.poster_path} alt={movie.title}/>
             {
-                mainGenreName &&
-                <MovieInfo title={movie.original_title} description={movie.overview} mainGenreName={mainGenreName}/>
+                <MovieInfo title={movie.original_title} description={movie.overview} mainGenreName={mainGenreName}
+                           voteAverage={movie.vote_average}/>
             }
         </div>
     );

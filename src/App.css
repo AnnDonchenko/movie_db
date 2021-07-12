@@ -9,6 +9,13 @@
   background-color: #f0efee;
   font-family: 'Open Sans', sans-serif;
 }
+.App > .container.loading{
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #717171;
+}
 .container{
   width: 1024px;
   margin: 0 auto;
