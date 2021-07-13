@@ -100,6 +100,8 @@ nav .active {
 }
 
 .theme-change > div {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
 }
 
@@ -108,14 +110,10 @@ nav .active {
 }
 
 .theme-change .dark {
-    width: 30px;
-    height: 30px;
     background-color: #c7c7c7;
 }
 
 .theme-change .light {
-    width: 30px;
-    height: 30px;
     margin-top: 5px;
     background-color: #f0efee;
     border: 1px solid #c7c7c7;
