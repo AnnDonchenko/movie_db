@@ -37,10 +37,11 @@ export default function MoviesList() {
         <div className={'container'}>
             <div className={'movies-list'}>
                 {
-                    movies.map(value => <MoviesListCard key={value.id} movie={value} genres={genres}/>)
+                    movies && movies.map(value => <MoviesListCard key={value.id} movie={value} genres={genres}/>)
                 }
             </div>
-            <div className={'pagination'}><Pagination count={500} size="large" page={page} onChange={handleChange}/></div>
+            <div className={'pagination'}><Pagination count={500} size="large" page={page} onChange={handleChange}/>
+            </div>
         </div>
     );
 }

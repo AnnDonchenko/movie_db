@@ -3,15 +3,15 @@ import {
     GET_GENRE_LIST,
     LOADING_TRUE,
     LOADING_FALSE,
-    IMG_LOADING_FALSE,
-    IMG_LOADING_TRUE
+    THEME_LIGHT,
+    THEME_DARK,
 } from "../actionTypes";
 
 const initialStates = {
     movies: [],
     genres: [],
     loading: true,
-    imgLoading: true,
+    theme: 'theme-light'
 };
 
 export const moviesReducer = (state = initialStates, action) => {
@@ -24,10 +24,10 @@ export const moviesReducer = (state = initialStates, action) => {
             return {...state, loading: true};
         case LOADING_FALSE:
             return {...state, loading: false};
-        case IMG_LOADING_TRUE:
-            return {...state, imgLoading: true};
-        case IMG_LOADING_FALSE:
-            return {...state, imgLoading: false};
+        case THEME_LIGHT:
+            return {...state, theme: 'theme-light'};
+        case THEME_DARK:
+            return {...state, theme: 'theme-dark'};
         default:
             return state;
     }

@@ -1,0 +1,53 @@
+.movie-details {
+    padding: 50px 0;
+    display: flex;
+    column-gap: 30px;
+    color: #b4b4b4;
+}
+
+.movie-details .movie-info {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.theme-dark .movie-details .movie-info {
+    background-color: white;
+}
+
+.movie-img {
+    border-radius: 10px;
+}
+
+.title-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-details h1 {
+    color: #717171;
+}
+
+.movie-details .tagline {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.movie-details .vote {
+    font-size: 1.5rem;
+    width: 100px;
+}
+
+.movie-details .vote span {
+    color: #48b4ce;
+    font-size: 2rem;
+}
+
+.movie-details .genres {
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.movie-details .overview {
+    margin-bottom: 20px;
+}

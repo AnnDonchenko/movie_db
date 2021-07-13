@@ -1,44 +1,52 @@
-header{
+header {
     height: 100px;
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
-header .container{
+
+header .container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
 }
-nav{
+
+nav {
     position: relative;
 }
-nav .nav-list{
+
+nav .nav-list {
     position: absolute;
     display: flex;
     flex-direction: column;
-    background: rgb(255,255,255);
-    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 100%);
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0 5px 5px 5px;
 }
-nav .nav-list > a{
+
+nav .nav-list > a {
     padding: 20px 40px;
     text-decoration: none;
     color: #717171;
     font-size: 25px;
     white-space: nowrap;
 }
-nav .nav-list > a:hover{
-    background: linear-gradient(rgba(245,245,245,1) 0%, rgba(255,255,255,1) 100%);
+
+nav .nav-list > a:hover {
+    background: linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
-nav .hide{
+
+nav .hide {
     display: none;
 }
-nav .active{
+
+nav .active {
     display: flex;
 }
-#nav-btn{
+
+#nav-btn {
     width: 50px;
     height: 35px;
     color: #bbbbbb;
@@ -48,23 +56,27 @@ nav .active{
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     font-size: 1rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 100%);
 }
-#nav-btn:hover{
+
+#nav-btn:hover {
     cursor: pointer;
 }
-.search{
+
+.search {
     position: relative;
 }
-.search input{
+
+.search input {
     width: 420px;
     height: 35px;
     background-color: #f7f6f6;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
-.search button{
+
+.search button {
     position: absolute;
     right: 1px;
     top: 1px;
@@ -75,6 +87,36 @@ nav .active{
     color: #bdbdbd;
     font-size: 1rem;
 }
-.search button:hover{
+
+.search button:hover {
     cursor: pointer;
+}
+
+.theme-change {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-change > div {
+    border-radius: 50%;
+}
+
+.theme-change > div:hover {
+    cursor: pointer;
+}
+
+.theme-change .dark {
+    width: 30px;
+    height: 30px;
+    background-color: #c7c7c7;
+}
+
+.theme-change .light {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #f0efee;
+    border: 1px solid #c7c7c7;
 }

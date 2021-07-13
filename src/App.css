@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .App {
-  background-color: #f0efee;
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-.App > .container.loading{
-  padding: 50px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  color: #717171;
+
+.App.theme-light {
+    background-color: #f0efee;
 }
-.container{
-  width: 1024px;
-  margin: 0 auto;
+
+.App.theme-dark {
+    background-color: #c7c7c7;
+}
+
+.App > .container.loading {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #717171;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: normal;
 }
 

@@ -2,11 +2,17 @@
     color: #b4b4b4;
 }
 
-.movie-info .title {
+.movie-info .title a {
+    display: inline-block;
+    text-decoration: none;
     color: #717171;
     font-size: 18px;
     font-weight: normal;
     padding: 20px;
+}
+
+.movie-info .title a:hover {
+    cursor: pointer;
 }
 
 .movie-info .description {
@@ -33,7 +39,7 @@
     align-items: center;
 }
 
-.movie-info .rating > .fb{
+.movie-info .rating > .fb {
     font-size: 1.5rem;
     margin-right: 10px;
 }
