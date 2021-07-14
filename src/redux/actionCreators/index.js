@@ -5,6 +5,8 @@ import {
     LOADING_FALSE,
     THEME_LIGHT,
     THEME_DARK,
+    SELECTED_PAGE,
+    SELECTED_GENRE,
 } from '../actionTypes';
 
 export const getMoviesList = (payload) => ({type: GET_MOVIES_LIST, payload});
@@ -13,3 +15,5 @@ export const setLoadingTrue = () => ({type: LOADING_TRUE});
 export const setLoadingFalse = () => ({type: LOADING_FALSE});
 export const setThemeLight = () => ({type: THEME_LIGHT});
 export const setThemeDark = () => ({type: THEME_DARK});
+export const setSelectedPage = (payload) => ({type: SELECTED_PAGE, payload});
+export const setSelectedGenre = (payload) => ({type: SELECTED_GENRE,payload});

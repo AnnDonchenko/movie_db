@@ -3,7 +3,7 @@ import './MovieInfo.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
-import StarRating from "../star-rating/StarRating";
+import StarRating from "../../star-rating/StarRating";
 
 export default function MovieInfo({id, title, description, mainGenreName, voteAverage}) {
     return (

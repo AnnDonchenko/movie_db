@@ -27,7 +27,7 @@
 }
 
 .container {
-    width: 1024px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -35,3 +35,14 @@ h1 {
     font-weight: normal;
 }
 
+.sides{
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+.sides .genres-list{
+    width: 10%;
+}
+.sides .movies-block{
+    width: 90%;
+}

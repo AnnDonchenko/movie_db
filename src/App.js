@@ -3,6 +3,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Header from "./components/header/Header";
 import Routes from "./routes/Routes";
 import {useSelector} from "react-redux";
+import GenresList from "./components/genres-list/GenresList";
 
 function App() {
 
@@ -11,7 +12,11 @@ function App() {
         <div className={"App " + theme}>
             <Router>
                 <Header/>
-                <Routes/>
+                <div className={'container sides'}>
+                    <GenresList/>
+                    <Routes/>
+                </div>
+
             </Router>
         </div>
     );

@@ -4,3 +4,5 @@ export const LOADING_TRUE = 'LOADING_TRUE';
 export const LOADING_FALSE = 'LOADING_FALSE';
 export const THEME_LIGHT = 'THEME_LIGHT';
 export const THEME_DARK = 'THEME_DARK';
+export const SELECTED_PAGE = 'SELECTED_PAGE';
+export const SELECTED_GENRE = 'SELECTED_GENRE';

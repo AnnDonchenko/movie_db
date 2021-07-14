@@ -1,9 +1,11 @@
-import {useEffect, useState} from "react";
-import {getMovie, getMovieImg500} from "../../services/MoviesAPI";
 import './MovieDetails.css';
+import {useEffect, useState} from "react";
+import {getMovie} from "../../services/MoviesAPI";
+import {getMovieImg500} from "../../services/ImgServices";
 import StarRating from "../star-rating/StarRating";
 import {setLoadingFalse, setLoadingTrue} from "../../redux/actionCreators";
 import {useDispatch, useSelector} from "react-redux";
+import {CircularProgress} from "@material-ui/core";
 
 export default function MovieDetails(props) {
     let {match: {params: {id}}} = props;
@@ -46,7 +48,7 @@ export default function MovieDetails(props) {
         let h = (runtime - m) / 60;
         return {m, h}
     }
-    if (loading) return <div className={'container loading'}><h2>loading ...</h2></div>
+    if (loading) return <div className={'container loading'}><CircularProgress /></div>
 
     return (
         <div className={'container movie-details'}>

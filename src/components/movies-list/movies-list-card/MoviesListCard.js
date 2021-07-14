@@ -6,6 +6,7 @@ export default function MoviesListCard({movie, genres}) {
 
     let mainGenre = genres.filter(value => value.id === movie.genre_ids[0]);
     let mainGenreName = mainGenre[0] ? mainGenre[0].name : 'no genre';
+
     return (
         <div className={'movies-list-card'}>
             <PosterPreview link={movie.poster_path} alt={movie.title}/>
