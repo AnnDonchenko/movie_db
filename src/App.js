@@ -12,11 +12,7 @@ function App() {
         <div className={"App " + theme}>
             <Router>
                 <Header/>
-                <div className={'container sides'}>
-                    <GenresList/>
-                    <Routes/>
-                </div>
-
+                <Routes/>
             </Router>
         </div>
     );
